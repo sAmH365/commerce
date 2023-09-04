@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 @Slf4j
 @Getter
 @NoArgsConstructor
-@Entity(name = "reviews")
-public class Reviews {
+@Entity(name = "review")
+public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +24,6 @@ public class Reviews {
 
     private LocalDateTime createdDate;
 
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
@@ -32,5 +31,4 @@ public class Reviews {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
-
 }
