@@ -8,9 +8,10 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDateTime;
 
 @Slf4j
+@Table(name = "chat")
 @Getter
 @NoArgsConstructor
-@Entity(name = "chat")
+@Entity
 public class Chat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

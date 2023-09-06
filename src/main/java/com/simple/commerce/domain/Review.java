@@ -9,9 +9,10 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDateTime;
 
 @Slf4j
+@Table(name = "review")
 @Getter
 @NoArgsConstructor
-@Entity(name = "review")
+@Entity
 public class Review {
 
     @Id

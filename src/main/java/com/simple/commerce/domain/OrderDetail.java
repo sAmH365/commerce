@@ -8,9 +8,10 @@ import lombok.extern.slf4j.Slf4j;
 import java.math.BigDecimal;
 
 @Slf4j
+@Table(name = "order_detail")
 @Getter
 @NoArgsConstructor
-@Entity(name = "order_detail")
+@Entity
 public class OrderDetail {
 
     @Id

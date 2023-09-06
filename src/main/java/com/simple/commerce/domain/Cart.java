@@ -3,14 +3,16 @@ package com.simple.commerce.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDateTime;
 
 @Slf4j
-@Getter
+@Table(name = "cart")
+@Getter @Setter
 @NoArgsConstructor
-@Entity(name = "cart")
+@Entity
 public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

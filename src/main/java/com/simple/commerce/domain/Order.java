@@ -12,9 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+@Table(name = "orders")
 @Getter
 @NoArgsConstructor
-@Entity(name = "orders")
+@Entity
 public class Order {
 
     @Id

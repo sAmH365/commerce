@@ -12,8 +12,9 @@ import java.util.List;
 
 @Getter
 @Slf4j
+@Table(name = "product")
 @NoArgsConstructor
-@Entity(name = "product")
+@Entity
 public class Product {
 
     @Id
